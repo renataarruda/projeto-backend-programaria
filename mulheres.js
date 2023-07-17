@@ -7,22 +7,22 @@ const porta = 3333
 const mulheres = [
     {
         nome: 'Renata Arruda',
-        imagem: '',
+        imagem: 'https://encurtador.com.br/vCSV0',
         minibio: 'Estagiária de desenvolvimento de software'
     },
     {
         nome: 'Iana Chan',
-        imagem: '',
+        imagem: 'https://encurtador.com.br/mLNPQ',
         minibio: 'Fundadora da Programaria'
     },
     {
         nome: 'Nina da Hora',
-        imagem: '',
+        imagem: 'https://encurtador.com.br/eoIQY',
         minibio: 'Hacker antirracista'
     },
     {
         nome: 'Simara Conceição',
-        imagem: '',
+        imagem: 'https://encurtador.com.br/hpIY3',
         minibio: 'Desenvolvedora e instrutora'
     }
 ]
