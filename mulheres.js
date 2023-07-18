@@ -53,6 +53,32 @@ function criarMulher(request, response) {
     response.json(mulheres);
 }
 
+//PATCH
+function corrigeMulher(request, response){
+
+    function encontraMulher(mulher){
+        if(mulher.id === request.params.id){
+            return mulher
+        }
+    }
+
+    const mulherEncontrada = mulheres.find(encontraMulher)
+
+    if (request.body.nome){
+        mulherEncontrada.nome = request.body.nome
+    }
+
+    if (request.body.imagem){
+        mulherEncontrada.imagem = request.body.imagem
+    }
+
+    if (request.body.minibio){
+        mulherEncontrada.minibio = request.body.minibio
+    }
+
+    response.json(mulheres)
+}
+
 // PORTA
 function mostraPorta() {
     console.log('Servidor criado e rodando na porta', porta)
@@ -60,4 +86,5 @@ function mostraPorta() {
 
 app.use(router.get('/mulheres', mostraMulheres)) // configuração de rota GET /mulheres
 app.use(router.post('/mulheres', criarMulher)) // configuração de rota POST /mulheres
+app.use(router.patch('/mulheres/:id', corrigeMulher)) //configuração rota PATCH /mulheres
 app.listen(porta, mostraPorta) // servidor ouvindo a porta
