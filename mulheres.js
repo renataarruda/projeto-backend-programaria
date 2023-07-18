@@ -79,6 +79,20 @@ function corrigeMulher(request, response){
     response.json(mulheres)
 }
 
+//DELETE
+function deletaMulher(request, response){
+
+    function todasMenosEla(mulher){
+        if(mulher.id !== request.params.id){
+            return mulher
+        }
+    }
+
+    const mulherQueFicam = mulheres.filter(todasMenosEla)
+
+    response.json(mulherQueFicam)
+}
+
 // PORTA
 function mostraPorta() {
     console.log('Servidor criado e rodando na porta', porta)
@@ -87,4 +101,5 @@ function mostraPorta() {
 app.use(router.get('/mulheres', mostraMulheres)) // configuração de rota GET /mulheres
 app.use(router.post('/mulheres', criarMulher)) // configuração de rota POST /mulheres
 app.use(router.patch('/mulheres/:id', corrigeMulher)) //configuração rota PATCH /mulheres
+app.use(router.delete('/mulheres/:id', deletaMulher)) // configuração rota DELETE /mulheres
 app.listen(porta, mostraPorta) // servidor ouvindo a porta
