@@ -2,11 +2,14 @@
 
 Projeto de criação de API que retorna informações de mulheres brasileiras na tecnologia.
 
-Feito com NodeJS durante o curso **Eu ProgrAmo: Back-End 1**, da Programaria.
+Feito durante o curso **Eu ProgrAmo: Back-End 1**, da Programaria.
 
 ## Projeto
 
 O objetivo é a realização de um CRUD para criar, ler, atualizar e deletar informações de tecnologistas brasileiras a partir do site [Mulheres em Tech Brasil](https://front-programaria-react-omega.vercel.app/).
+
+## Tecnologias
+NodeJS, Express, Mongoose, MongoDB.
 
 ## Desenvolvimento
 
