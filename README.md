@@ -6,7 +6,7 @@ Feito durante o curso **Eu ProgrAmo: Back-End 1**, da Programaria.
 
 ## Projeto
 
-O objetivo é a realização de um CRUD para criar, ler, atualizar e deletar informações de tecnologistas brasileiras a partir do site [Mulheres em Tech Brasil](https://front-programaria-react-omega.vercel.app/).
+O objetivo é a realização de um CRUD para criar, ler, atualizar e deletar informações de tecnologistas brasileiras a partir do site [Mulheres em Tech Brasil](https://front-programaria-react-theta-fawn.vercel.app/).
 
 ## Tecnologias
 NodeJS, Express, Mongoose, MongoDB.
@@ -19,4 +19,6 @@ Também foi ensinada a criação de rotas ```POST``` e ```PATCH```, além da req
 
 Utilizamos a biblioteca [```UUID```](https://www.npmjs.com/package/uuid) para a geração automática de ```ids```.
 
-{Curso em andamento}
+Para a versão final do projeto, foi utilizado o pacote ```Mongoose``` para integração com o banco de dados MongoDB. A proteção de dados sensíveis foi feita utilizando a biblioteca ```dotenv```.
+
+Por fim, o projeto foi [integrado ao front-end](https://github.com/renataarruda/front-programaria-react), previamente desenvolvido pela instrutora Simara Conceição, com atualização do link para conexão com a API criada durante o curso.
