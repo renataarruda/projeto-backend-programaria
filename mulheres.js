@@ -1,5 +1,6 @@
 const express = require('express') // iniciando o express
 const router = express.Router() // configurando a primeira parte da rota
+const cors = require('cors') // trazendo pacote cors, que permite consumir essa API no front-end
 
 const conectaBancoDeDados = require('./bancoDados') //ligando ao arquivo bancoDeDados
 conectaBancoDeDados() //chamando a função que conecta o banco de dados
@@ -7,6 +8,8 @@ conectaBancoDeDados() //chamando a função que conecta o banco de dados
 const Mulher = require('./mulherModel')
 const app = express() // iniciando o app
 app.use(express.json())
+app.use(cors()) // libera a aplicação para ser usada a partir do front-end
+
 const porta = 3333; // criando a porta
 
 // GET
