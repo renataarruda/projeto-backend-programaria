@@ -22,3 +22,8 @@ Utilizamos a biblioteca [```UUID```](https://www.npmjs.com/package/uuid) para a 
 Para a versão final, foi utilizado o pacote [```Mongoose```](https://www.npmjs.com/package/mongoose) para integração com o banco de dados MongoDB. A proteção de dados sensíveis foi feita utilizando a biblioteca [```dotenv```](https://www.npmjs.com/package/dotenv).
 
 Por fim, o projeto foi [integrado ao front-end](https://github.com/renataarruda/front-programaria-react), previamente desenvolvido pela instrutora Simara Conceição, com atualização do link para conexão com a API criada durante o curso.
+
+## Demonstração
+
+[screen-capture (2).webm](https://github.com/renataarruda/projeto-backend-programaria/assets/91355221/d2365236-422f-43b6-9a92-b0e82862425b)
+
